@@ -1,0 +1,5 @@
+# Tells `dagster dev` where the job definitions live.
+load_from:
+  - python_module:
+      module_name: wrc_pipeline.orchestration.definitions
+      working_directory: .

@@ -1,0 +1,11 @@
+# Example run configuration for the headless entry point:
+#   uv run dagster job execute -m wrc_pipeline.orchestration.definitions \
+#       -j wrc_ingest_and_transform -c run_config.yaml
+ops:
+  build_plan:
+    config:
+      start_date: "2024-01-01"
+      end_date: "2024-03-31"
+      bodies: "employment_appeals_tribunal,equality_tribunal,labour_court,workplace_relations_commission"
+      partition: "monthly"
+      refresh_policy: "hash"

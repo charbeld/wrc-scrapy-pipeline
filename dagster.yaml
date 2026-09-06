@@ -1,0 +1,4 @@
+# Minimal Dagster instance config. Run history is stored under dagster_home/
+# (git-ignored); the defaults use SQLite, which is plenty for a local instance.
+telemetry:
+  enabled: false
